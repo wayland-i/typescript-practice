@@ -8,6 +8,10 @@ function App() {
 
   let age: number = 20;
 
+    if (age < 50) age += 10;
+
+  console.log(age)
+
   return (
     <div className="App">
       <h1>hello</h1>

@@ -1,19 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES2016", //changed
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
+    "module": "CommonJS", //changed
+    "rootDir": "./src", //changed
+    "outDir": "./dist", //changed
+    "noEmitOnError": true, //changed
+    "removeComments": true, //changed
+    "sourceMap": true, //changed
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": true, 
     "jsx": "react-jsx"
   },
   "include": ["src"],
