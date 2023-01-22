@@ -6,13 +6,26 @@ function App() {
   const [count, setCount] = useState(0)
 
 
-  function calculateTax(income: number, taxYear = 2022): number {
-    if (taxYear < 2022)
-      return income * 1.2;
-    return income * 1.3;
-  }
+  // function calculateTax(income: number, taxYear = 2022): number {
+  //   if (taxYear < 2022)
+  //     return income * 1.2;
+  //   return income * 1.3;
+  // }
 
-  calculateTax(10_000);
+  // calculateTax(10_000);
+
+  const employee: {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+  } = { 
+    id: 1,
+    name: 'Mosh', 
+    retire: (date: Date) => {
+      console.log(date);
+    }}
+
+    console.log(employee)
 
 
   return (
